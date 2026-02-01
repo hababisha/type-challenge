@@ -31,7 +31,7 @@
 type HelloWorld = string
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect, NotAny } from './utils'
+import type { Equal, Expect, NotAny } from '../utils'
 
 type cases = [
   Expect<NotAny<HelloWorld>>,
