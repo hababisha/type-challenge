@@ -22,6 +22,15 @@
 
 /* _____________ Your Code Here _____________ */
 
+/*
+If T is PromiseLike<U>:
+    If U is also PromiseLike:
+        unwrap again
+    Else:
+        return U
+Else:
+    return T
+*/
 type MyAwaited<T> = T extends PromiseLike<infer U> ? U extends PromiseLike<any> ? MyAwaited<U> : U : T
 
 /* _____________ Test Cases _____________ */
