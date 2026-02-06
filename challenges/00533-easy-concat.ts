@@ -18,8 +18,8 @@
 
 /* _____________ Your Code Here _____________ */
 
-type Tuple = readonly unknown[];
-type Concat<T extends Tuple, U extends Tuple> =  [...T, ...U]
+type tuple = readonly unknown[]
+type Concat<T extends tuple, U extends tuple> = [...T, ...U]
 
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from '../utils'
